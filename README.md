@@ -13,7 +13,7 @@ I couldn't find any python scirpts or modules to create and plot a simple lift c
 - vis: Display the resulting lift chart on a basic plt plot
 
 ## Resulting graph
-![alt tag](https://imgur.com/a/5RVS5)
+![example](https://i.imgur.com/Wlnvq54.png)
 
 ## On lift charts
 https://en.wikipedia.org/wiki/Lift_(data_mining)
