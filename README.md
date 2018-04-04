@@ -1,5 +1,5 @@
 # Python-lift-chart
-Create and plot a simple lift chart.
+Create and plot a simple lift chart (not to be confused with ROC chart).
 
 ## Prequisites
 - Numpy
