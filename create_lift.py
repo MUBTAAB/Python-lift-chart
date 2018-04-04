@@ -23,12 +23,12 @@ def create_lift(outcome, model_proba, precision = 2, vis = False):
     df_grp = df_pred.groupby('model_proba_pct')['outcome'].agg(['sum','count'])
     df_grp = df_grp.sort_index(ascending = False)
     
-    df_grp['rate'] = (df_grp['sum'].cumsum()/df_grp['count'].cumsum())/avgoutcome
+    df_grp['lift'] = (df_grp['sum'].cumsum()/df_grp['count'].cumsum())/avgoutcome
     
     if vis == True:
         import matplotlib.pyplot as plt
         plt.figure(figsize = (10,7.5))
-        plt.plot(df_grp['rate'], linewidth = 3)
+        plt.plot(df_grp['lift'], linewidth = 3)
         df_grp['ref'] = 1
         plt.plot(df_grp['ref'], '--', linewidth = 3)
         plt.gca().invert_xaxis()
@@ -37,4 +37,4 @@ def create_lift(outcome, model_proba, precision = 2, vis = False):
         plt.title('Lift Chart')
         plt.show()
     
-    return(df_grp['rate'])
+    return(df_grp['lift'])
