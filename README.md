@@ -1,5 +1,5 @@
 # Python-lift-chart
-I couldn't find any python scirpts or modules to create and plot a simple lift chart (not to be confused with the ROC chart). So I made one using pandas, numpy and matplotlib.
+Create and plot a simple lift chart.
 
 ## Prequisites
 - Numpy
@@ -17,3 +17,6 @@ I couldn't find any python scirpts or modules to create and plot a simple lift c
 
 ## On lift charts
 https://en.wikipedia.org/wiki/Lift_(data_mining)
+
+## Lift vs Roc
+http://www.groupes.polymtl.ca/mth6301/mth8302/Autres/Clement-CourbesROC&CourbesLIFT.pdf
